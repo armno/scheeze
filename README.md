@@ -1,4 +1,4 @@
 scheeze
 =======
 
-A cool shit helps getting another cool shit done.
+A cool shit helps getting my another cool shit done.
