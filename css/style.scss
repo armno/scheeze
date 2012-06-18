@@ -51,8 +51,17 @@ a {
 		text-decoration: underline;
 	}
 }
+
+input {
+	font-family: 'Merriweather', serif;
+}
 input[type=text] {
 	border: 1px solid $c;
-	padding: 3px;
-	font-size: 2rem;
+	padding: 5px;
+	font-size: 28px;
+	width: 460px;
+}
+
+h3 {
+	margin-top: 40px;
 }
