@@ -1,0 +1,46 @@
+body {
+	    font-size: 1.0000rem;
+		    line-height: 1.5000rem;
+}
+article {
+	    max-width: 998px;
+		    margin: auto;
+}
+h1 {
+	    font-size: 6.8750rem;
+		    line-height: 7.5000rem;
+			    margin-top: 1.5rem;
+				    margin-bottom: 3rem;
+}
+h2 {
+	    font-size: 2.6250rem;
+		    line-height: 3.0000rem;
+			    margin-top: 3rem;
+				    margin-bottom: 1.5rem;
+}
+h3 {
+	    font-size: 1.6250rem;
+		    line-height: 3.0000rem;
+			    margin-top: 1.5rem;
+				    margin-bottom: 0rem;
+}
+p, ul {
+	    margin-top: 0rem;
+		    margin-bottom: 1.5rem;
+}
+small, aside {
+	    font-size: 0.6250rem;
+}
+$c: #ccc;
+$dark: #333;
+body {
+	width: 1000px;
+	margin: auto;
+	color: $dark;
+}
+
+input[type=text] {
+	border: 1px solid $c;
+	padding: 3px;
+	font-size: 2rem;
+}
