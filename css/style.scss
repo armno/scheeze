@@ -1,44 +1,56 @@
 body {
-	    font-size: 1.0000rem;
-		    line-height: 1.5000rem;
+	    font-size: 14px;
+		    line-height: 21px;
 }
 article {
 	    max-width: 998px;
 		    margin: auto;
 }
 h1 {
-	    font-size: 6.8750rem;
-		    line-height: 7.5000rem;
-			    margin-top: 1.5rem;
-				    margin-bottom: 3rem;
+	    font-size: 96px;
+		    line-height: 105px;
+			    margin-top: 21px;
+				    margin-bottom: 42px;
 }
 h2 {
-	    font-size: 2.6250rem;
-		    line-height: 3.0000rem;
-			    margin-top: 3rem;
-				    margin-bottom: 1.5rem;
+	    font-size: 37px;
+		    line-height: 42px;
+			    margin-top: 42px;
+				    margin-bottom: 21px;
 }
 h3 {
-	    font-size: 1.6250rem;
-		    line-height: 3.0000rem;
-			    margin-top: 1.5rem;
-				    margin-bottom: 0rem;
+	    font-size: 23px;
+		    line-height: 42px;
+			    margin-top: 21px;
+				    margin-bottom: 0px;
 }
 p, ul {
-	    margin-top: 0rem;
-		    margin-bottom: 1.5rem;
+	    margin-top: 0px;
+		    margin-bottom: 21px;
 }
 small, aside {
-	    font-size: 0.6250rem;
+	    font-size: 9px;
 }
 $c: #ccc;
 $dark: #333;
 body {
 	width: 1000px;
-	margin: auto;
+	margin: 40px auto;
 	color: $dark;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	& > footer {
+		margin-top: 120px;
+	}
 }
+a {
+	color: #195580;
+	text-decoration: none;
 
+	&:hover {
+		text-decoration: underline;
+	}
+}
 input[type=text] {
 	border: 1px solid $c;
 	padding: 3px;
