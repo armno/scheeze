@@ -2,7 +2,7 @@ window.onload = function() {
 
 	var list = {
 		init : function() {
-			
+
 			var input = document.querySelector('#new-shit');
 
 			list.loadShits(); // display existing shits
