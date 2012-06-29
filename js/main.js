@@ -3,13 +3,19 @@ window.onload = function() {
 	var list = {
 		init : function() {
 
-			list.loadShits();
+			list.loadShits(); // display existing shits
 
 			var input = document.querySelector('#new-shit');
 			input.addEventListener('keypress', function(e) {
 
 				if ( e.charCode === 13 ) { // catch enter key
-					list.addShit(this.value)
+					var newShit = this.value;
+					if ( newShit === 'clear') {
+						list.clearShits();
+					} else {
+						list.addShit(this.value)
+					}
+					this.value = ''; // clear typed values
 				}
 
 			});		
@@ -30,12 +36,12 @@ window.onload = function() {
 		},
 		addShit : function(newShit) {
 
-			var list = document.querySelector('ol'),
+			var shitList = document.querySelector('ol'),
 				li = document.createElement('li');
 
 			// append new item into the list
 			li.textContent = newShit;
-			list.appendChild(li);
+			shitList.appendChild(li);
 
 			// the clear input value
 			// this.value = '';
@@ -52,6 +58,13 @@ window.onload = function() {
 			});
 
 			localStorage.setItem('shits', JSON.stringify(shits));
+		},
+		clearShits : function() {
+			localStorage.removeItem('shits');
+
+			var shitList = document.querySelector('ol');
+			shitList.innerHTML = '';
+
 		}
 	};
 
