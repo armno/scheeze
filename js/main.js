@@ -13,6 +13,10 @@
 					var newShit = this.value;
 					if ( newShit === 'clear') {
 						list.clearShits();
+					} else if ( newShit === 'help' ) {
+						document.querySelector('.help').style.display = 'block';	
+					} else if ( newShit === 'ok') {
+						document.querySelector('.help').style.display = 'none';
 					} else {
 						list.addShit(this.value)
 					}
