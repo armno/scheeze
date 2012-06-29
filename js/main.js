@@ -2,10 +2,11 @@ window.onload = function() {
 
 	var list = {
 		init : function() {
+			
+			var input = document.querySelector('#new-shit');
 
 			list.loadShits(); // display existing shits
 
-			var input = document.querySelector('#new-shit');
 			input.addEventListener('keypress', function(e) {
 
 				if ( e.charCode === 13 ) { // catch enter key
@@ -37,22 +38,14 @@ window.onload = function() {
 		addShit : function(newShit) {
 
 			var shitList = document.querySelector('ol'),
-				li = document.createElement('li');
+				li = document.createElement('li'),
+				shits = JSON.parse(localStorage.getItem('shits')) || [];
 
 			// append new item into the list
 			li.textContent = newShit;
 			shitList.appendChild(li);
 
-			// the clear input value
-			// this.value = '';
-
 			// get all current shits and append this new one
-			var shits = JSON.parse(localStorage.getItem('shits'));
-
-			if ( !shits ) {
-				shits = [];
-			}
-
 			shits.push({
 				'item' : newShit
 			});
