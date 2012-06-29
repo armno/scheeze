@@ -1,4 +1,4 @@
-window.onload = function() {
+(function() {
 
 	var list = {
 		init : function() {
@@ -62,4 +62,5 @@ window.onload = function() {
 	};
 
 	list.init();
-}
+})();
+
